@@ -22,5 +22,17 @@
     "type": "glodar",
     "price": 800,
     "isSold": true
+  },
+  {
+    "id": 4,
+    "commonName": "Papagaj Tigrica",
+    "price": 2500,
+    "isSold": false
+  },
+  {
+    "id": 5,
+    "commonName": "Sijamska Mačka",
+    "price": 12000,
+    "isSold": false
   }
 ]
