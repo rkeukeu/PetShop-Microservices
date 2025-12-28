@@ -1,0 +1,39 @@
+[12/27/2025, 6:36:46 PM] [INFO]: Registration request received
+[12/27/2025, 6:36:47 PM] [INFO]: Zahtev za registraciju: rkeukeu
+[12/27/2025, 6:36:47 PM] [ERROR]: Error: ENOENT: no such file or directory, open 'C:\Users\TUF\Desktop\OIB_Projekat_Template\infrastructure\microservices\auth-microservice\src\Domain\Database\users.json'
+[12/27/2025, 6:39:36 PM] [INFO]: Registration request received
+[12/27/2025, 6:39:36 PM] [INFO]: Zahtev za registraciju: rkeukeu
+[12/27/2025, 8:00:06 PM] [INFO]: Login request received
+[12/27/2025, 8:00:07 PM] [INFO]: Pokušaj prijave za korisnika: rkeukeu
+[12/27/2025, 8:31:37 PM] [INFO]: Login request received
+[12/27/2025, 8:31:37 PM] [INFO]: Pokušaj prijave za korisnika: rkeukeu
+[12/27/2025, 8:34:47 PM] [INFO]: Registration request received
+[12/27/2025, 8:34:47 PM] [INFO]: Zahtev za registraciju: urosadmin
+[12/27/2025, 8:35:35 PM] [INFO]: Login request received
+[12/27/2025, 8:35:35 PM] [INFO]: Pokušaj prijave za korisnika: rkeukeu
+[12/27/2025, 8:36:24 PM] [INFO]: Login request received
+[12/27/2025, 8:36:24 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 8:38:48 PM] [INFO]: Login request received
+[12/27/2025, 8:38:48 PM] [INFO]: Pokušaj prijave za korisnika: rkeukeu
+[12/27/2025, 8:39:38 PM] [INFO]: Login request received
+[12/27/2025, 8:39:38 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 8:44:22 PM] [INFO]: Login request received
+[12/27/2025, 8:44:22 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 8:49:14 PM] [INFO]: Login request received
+[12/27/2025, 8:49:14 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 8:51:30 PM] [INFO]: Login request received
+[12/27/2025, 8:51:30 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 8:54:10 PM] [INFO]: Login request received
+[12/27/2025, 8:54:10 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 9:12:31 PM] [INFO]: Login request received
+[12/27/2025, 9:12:31 PM] [INFO]: Pokušaj prijave za korisnika: rkeukeu
+[12/27/2025, 9:13:08 PM] [INFO]: Login request received
+[12/27/2025, 9:13:08 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 9:45:51 PM] [INFO]: Login request received
+[12/27/2025, 9:45:51 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 9:46:02 PM] [INFO]: Login request received
+[12/27/2025, 9:46:02 PM] [INFO]: Pokušaj prijave za korisnika: rkeukeu
+[12/27/2025, 9:46:39 PM] [INFO]: Login request received
+[12/27/2025, 9:46:39 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[12/27/2025, 9:46:43 PM] [INFO]: Login request received
+[12/27/2025, 9:46:43 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin

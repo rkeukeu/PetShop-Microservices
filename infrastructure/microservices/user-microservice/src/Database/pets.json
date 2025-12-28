@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "latinName": "Canis lupus familiaris",
+    "commonName": "Zlatni Retriver",
+    "type": "sisar",
+    "price": 50000,
+    "isSold": true
+  },
+  {
+    "id": 2,
+    "latinName": "Python regius",
+    "commonName": "Kraljevski Piton",
+    "type": "gmizavac",
+    "price": 15000,
+    "isSold": true
+  },
+  {
+    "id": 3,
+    "latinName": "Mesocricetus auratus",
+    "commonName": "Sirijski Hrčak",
+    "type": "glodar",
+    "price": 800,
+    "isSold": true
+  }
+]
