@@ -34,5 +34,69 @@
     "commonName": "Sijamska Mačka",
     "price": 12000,
     "isSold": false
+  },
+  {
+    "id": 6,
+    "commonName": "Crvena Panda",
+    "latinName": "Ne znam zaista",
+    "type": "sisar",
+    "price": 15000,
+    "isSold": false
+  },
+  {
+    "commonName": "Crna Mamba",
+    "latinName": "Dendroaspis polylepis polylepis",
+    "type": "gmizavac",
+    "price": 29999,
+    "isSold": false,
+    "id": 7
+  },
+  {
+    "commonName": "Leopardov gekon",
+    "latinName": "Eublepharis macularius",
+    "type": "gmizavac",
+    "price": 4500,
+    "isSold": false,
+    "id": 8
+  },
+  {
+    "commonName": "Činčila",
+    "latinName": "Chinchilla lanigera",
+    "type": "glodar",
+    "price": 8000,
+    "isSold": false,
+    "id": 9
+  },
+  {
+    "commonName": "Feretka",
+    "latinName": "Mustela putorius furo",
+    "type": "sisar",
+    "price": 12000,
+    "isSold": false,
+    "id": 10
+  },
+  {
+    "commonName": "Bradata agama",
+    "latinName": "Pogona vitticeps",
+    "type": "gmizavac",
+    "price": 7500,
+    "isSold": false,
+    "id": 11
+  },
+  {
+    "commonName": "Degu",
+    "latinName": "Octodon degus",
+    "type": "glodar",
+    "price": 12790,
+    "isSold": false,
+    "id": 12
+  },
+  {
+    "commonName": "Morsko prase",
+    "latinName": "Cavia porcellus",
+    "type": "glodar",
+    "price": 2000,
+    "isSold": false,
+    "id": 13
   }
 ]

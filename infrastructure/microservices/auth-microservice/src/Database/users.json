@@ -14,5 +14,13 @@
     "role": "ADMIN",
     "password": "$2b$10$m9goR1jgRU5gub2vng8S0eNQO4fGJgxF9bXBvpXrVNRJ4aQQJlSz6",
     "profileImage": ""
+  },
+  {
+    "id": 1770514506277,
+    "username": "uros",
+    "email": "test@email.com",
+    "role": "SELLER",
+    "password": "$2b$10$xa5TD9EBmdJqEd3IXn0LR.rSJQ.BU8ONz7MiaW0jsi47hZxi2nC5e",
+    "profileImage": ""
   }
 ]

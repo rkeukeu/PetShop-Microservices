@@ -11,7 +11,7 @@ export class PetService implements IPetService {
     private petRepository: IPetRepository,
     private receiptRepository: JsonReceiptRepository,
     private logerService: ILogerService,
-    private saleService: ISaleService
+    private saleService: ISaleService,
   ) {}
 
   async getAllPets(): Promise<Pet[]> {
@@ -20,11 +20,12 @@ export class PetService implements IPetService {
 
   async addPet(data: Pet): Promise<Pet> {
     const allPets = await this.petRepository.getAll();
+    const petsInShop = allPets.filter((p) => !p.isSold).length;
 
-    if (allPets.length >= 10) {
+    if (petsInShop >= 10) {
       await this.logerService.log(
-        "ERROR",
-        "Neuspešno dodavanje: Prodavnica je puna (10/10)."
+        "WARNING",
+        "Pokušaj dodavanja u punu prodavnicu.",
       );
       throw new Error("Kapacitet prodavnice je popunjen!");
     }
@@ -32,25 +33,35 @@ export class PetService implements IPetService {
     const newPet = await this.petRepository.save(data);
     await this.logerService.log(
       "INFO",
-      `Dodat novi ljubimac: ${data.commonName}`
+      `Dodat novi ljubimac: ${data.commonName}`,
     );
     return newPet;
   }
 
   async sellPet(petId: number, sellerName: string): Promise<Receipt> {
+    const currentHour = new Date().getHours();
+
+    if (currentHour < 8 || currentHour >= 22) {
+      await this.logerService.log(
+        "ERROR",
+        `Pokušaj prodaje van radnog vremena: ${sellerName}`,
+      );
+      throw new Error(
+        "Prodavnica je zatvorena! Radno vreme je od 08:00 do 22:00.",
+      );
+    }
+
     const pet = await this.petRepository.getById(petId);
     if (!pet || pet.isSold)
       throw new Error("Ljubimac nije dostupan za prodaju.");
 
     const finalPrice = Number(
-      this.saleService.calculateFinalPrice(pet.price).toFixed(2)
+      this.saleService.calculateFinalPrice(pet.price).toFixed(2),
     );
 
-    // 1. Markiraj ljubimca kao prodatog
     pet.isSold = true;
     await this.petRepository.save(pet);
 
-    // 2. Kreiraj i sačuvaj fiskalni račun
     const newReceipt = new Receipt();
     newReceipt.id = Date.now();
     newReceipt.sellerName = sellerName;
@@ -61,16 +72,14 @@ export class PetService implements IPetService {
 
     await this.receiptRepository.save(newReceipt);
 
-    // 3. Loguj akciju
     await this.logerService.log(
       "INFO",
-      `Izdat račun #${newReceipt.id} - Prodavac: ${sellerName}`
+      `Izdat račun #${newReceipt.id} - Prodavac: ${sellerName}`,
     );
 
     return newReceipt;
   }
 
-  // Dodajemo metodu koju menadžer može da pozove
   async getAllReceipts(): Promise<Receipt[]> {
     return await this.receiptRepository.getAll();
   }

@@ -37,3 +37,21 @@
 [12/27/2025, 9:46:39 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
 [12/27/2025, 9:46:43 PM] [INFO]: Login request received
 [12/27/2025, 9:46:43 PM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[2/8/2026, 2:33:46 AM] [INFO]: Login request received
+[2/8/2026, 2:33:46 AM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[2/8/2026, 2:33:52 AM] [INFO]: Login request received
+[2/8/2026, 2:33:52 AM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[2/8/2026, 2:34:40 AM] [INFO]: Login request received
+[2/8/2026, 2:34:40 AM] [INFO]: Pokušaj prijave za korisnika: rkeukeu
+[2/8/2026, 2:35:06 AM] [INFO]: Registration request received
+[2/8/2026, 2:35:06 AM] [INFO]: Zahtev za registraciju: uros
+[2/8/2026, 2:43:27 AM] [INFO]: Login request received
+[2/8/2026, 2:43:27 AM] [INFO]: Pokušaj prijave za korisnika: uros
+[2/8/2026, 2:43:55 AM] [INFO]: Login request received
+[2/8/2026, 2:43:55 AM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[2/8/2026, 2:49:37 AM] [INFO]: Login request received
+[2/8/2026, 2:49:37 AM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[2/8/2026, 2:58:24 AM] [INFO]: Login request received
+[2/8/2026, 2:58:24 AM] [INFO]: Pokušaj prijave za korisnika: urosadmin
+[2/8/2026, 2:59:09 AM] [INFO]: Login request received
+[2/8/2026, 2:59:09 AM] [INFO]: Pokušaj prijave za korisnika: uros

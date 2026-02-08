@@ -23,15 +23,21 @@ export class JsonPetRepository implements IPetRepository {
 
   async save(data: Pet): Promise<Pet> {
     const all = await this.getAll();
-    const index = all.findIndex((p) => p.id === data.id);
 
-    if (index !== -1) {
-      // Ako postoji, ažuriraj ga (ovo sprečava duplikate)
-      all[index] = data;
-    } else {
-      // Ako ne postoji (novi je), dodaj ga
-      // Ovde možeš dodati logiku za automatski ID ako već nije postavljen
+    // 1. Ako ljubimac nema ID, znači da je nov - dodeli mu sledeći slobodan broj
+    if (!data.id) {
+      const maxId = all.length > 0 ? Math.max(...all.map((p) => p.id)) : 0;
+      data.id = maxId + 1;
       all.push(data);
+    } else {
+      // 2. Ako ima ID, proveri da li već postoji da bismo ga ažurirali (za sellPet)
+      const index = all.findIndex((p) => p.id === data.id);
+      if (index !== -1) {
+        all[index] = data;
+      } else {
+        // Ovo je slučaj ako ručno uneseš ID koji ne postoji
+        all.push(data);
+      }
     }
 
     await fs.promises.writeFile(this.dbPath, JSON.stringify(all, null, 2));
